@@ -148,7 +148,7 @@ main .section1 .section1-2{
     justify-content: space-between;
 }
 main .section1 .section1-2 .sec12-left{
-    background-image: url("./Images/person.webp");
+    background-image: url("./Assets/person.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -753,17 +753,17 @@ main .section6 .sub-section6 .action6 .one .sub6-2 img{
     height: 40px;
 }
 main .section6 .sub-section6 .action6 .child6-1{
-    background-image: url("./Images/section6-1.webp");
+    background-image: url("./Assets/section6-1.webp");
 }
 main .section6 .sub-section6 .action6 .child6-2{
-    background-image: url("./Images/section6-2.webp");
+    background-image: url("./Assets/section6-2.webp");
 }
 main .section6 .sub-section6 .action6 .child6-5{
     width: 66%;
     height: 420px;
     /* border: 2px solid; */
     border-radius: 20px;
-    background-image: url("./Images/section6-5.webp");
+    background-image: url("./Assets/section6-5.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -829,7 +829,7 @@ main .section8{
     height: 400px;
     margin-top: 50px;
     background-color: rgb(197, 197, 218);
-    /* background-image: url("./Images/section-8.webp");
+    /* background-image: url("./Assets/section-8.webp");
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
