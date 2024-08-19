@@ -1,0 +1,821 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+nav{
+    /* border: 2px solid; */
+    height: 48px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(22, 22, 23, 0.8);
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+#sub-nav{
+    /* border: 2px solid; */
+    height: inherit;
+    width: 78%;
+    margin: auto;
+}
+#sub-nav ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sub-nav ol li{
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    list-style: none;
+    font-weight: 400;
+}
+#sub-nav ol li svg{
+    fill: rgba(255, 255, 255, 0.8);
+}
+.p{
+    height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #1d1d1f;
+    color: #fff;
+    gap: 5px;
+}
+.p a{
+    color: #0071e3;
+    text-decoration: none;
+}
+#sub-section1{
+    /* border: 2px solid; */
+    cursor: pointer;
+    height: 90vh;
+    background-image: url("./Assets/bg-image.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section1 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 550;
+    padding-top: 40px;
+}
+#sub-section1 p{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section1 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section1 div button{
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section1 div button:hover{
+    background-color: #037df6;
+}
+#sub-section1 div button+button{
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+}
+#sub-section1 div button+button:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section2{
+    height: 580px;
+    width: 100%;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#sub-section2 .bubble-wrapper{
+    height: 80%;
+    width: 90%;
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+}
+.bubble-wrapper{
+    flex-wrap: wrap;
+    align-content: center;
+}
+.bubble-wrapper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    position: relative;
+    width: 30%;
+    margin: auto;
+}
+.bubble-wrapper div svg{
+    fill: #fff;
+}
+.bubble-wrapper .bubble1{
+    left: -10px;
+}
+.bubble-wrapper .bubble1 svg{
+    height: 153px;
+    width: 277px;
+    font-size: 51px;
+    color: #fff;
+    font-weight: 600;
+    rotate: -5deg;
+    position: relative;
+    top: 5px;
+    /* border: 2px solid red; */
+}
+.bubble-wrapper .bubble1 svg+svg{
+    height: 150px;
+    width: 274px;
+    /* border: 2px solid red; */
+    font-size: 51px;
+    color: #fff;
+    fill: #007aff;
+    font-weight: 600;
+    rotate: -5deg;
+    position: absolute;
+    top: 7px;
+    left: 48px;
+}
+.bubble-wrapper .bubble1 img{
+    height: 77px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: -8px;
+}
+.bubble-wrapper .bubble1 img+img{
+    height:125px;
+    width: 125px;
+    position: absolute;
+    top: -34px;
+    left: 230px;
+}
+.bubble-wrapper .bubble1 img+img+img{
+    height: 149px;
+    width: 133px;
+    position: absolute;
+    top: 133px;
+    left: -25px;
+}
+.bubble-wrapper .bubble2{
+    left: 50px;
+    top: -5px;
+}
+.bubble-wrapper .bubble2 svg{
+    height: 35px;
+    width: 212px ;
+    font-size: 41px;
+    color: #fff;
+    font-weight: 600;
+    rotate: -2deg;
+    position: relative;
+}
+.bubble-wrapper .bubble2 svg+svg{
+    height: 31px;
+    width: 208px;
+    font-size: 41px;
+    color: #fff;
+    fill: #007aff;
+    font-weight: 600;
+    rotate: -2deg;
+    position: absolute;
+}
+.bubble-wrapper .bubble2 svg foreignObject{
+    padding-top: 9px;
+}
+.bubble-wrapper .bubble3{
+    left: 90px;
+    top: -3px;
+}
+.bubble-wrapper .bubble3 svg{
+    height: 96px;
+    width: 254px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    rotate: 5deg;
+    position: relative;
+    z-index: -4;
+}
+.bubble-wrapper .bubble3 svg+svg{
+    height: 93px;
+    width: 250px;
+    font-size: 40px;
+    fill: #007aff;
+    color: #fff;
+    font-weight: 600;
+    rotate: 5deg;
+    position: absolute;
+    top: 2px;
+    z-index: -3;
+}
+.bubble-wrapper .bubble3 img{
+    height: 70px;
+    width: 78px;
+    position: absolute;
+    bottom: -25px;
+    right: 65px;
+}
+.bubble-wrapper .bubble4{
+    left: 20px;
+    top: -15px;
+}
+.bubble-wrapper .bubble4 svg{
+    height: 94px;
+    width: 250px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    rotate: 10deg;
+    position: relative;
+    z-index: -6;
+}
+.bubble-wrapper .bubble4 svg+svg{
+    height: 91px;
+    width: 246px;
+    font-size: 30px;
+    color: #fff;
+    fill: #007aff;
+    font-weight: 600;
+    rotate: 10deg;
+    position: absolute;
+    z-index: -5;
+}
+.bubble-wrapper .bubble4 img{
+    height: 70px;
+    width: 120px;
+    position: absolute;
+    bottom: 5px;
+    right: 75px;
+}
+.bubble-wrapper .bubble5{
+    top: -20px;
+    left: 15px;
+}
+.bubble-wrapper .bubble5 svg{
+    height: 33px;
+    width: 202px;
+    fill: #e1dfe5;
+    font-size: 34px;
+    color: #000f;
+    /* font-weight: 600; */
+}
+.bubble-wrapper .bubble5 img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: -10px;
+    right: 90px
+}
+.bubble-wrapper .bubble5 svg foreignObject{
+    padding-top: 10px;
+}
+#sub-section2 button{
+    width: 83px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #007aff;
+    color: #007aff;
+    margin-left: 540px;
+    font-size: 17px;
+}
+#sub-section2 button:hover{
+    background-color: #007aff;
+    color: #fff;
+}
+#sub-section3{
+    /* border: 2px solid; */
+    cursor: pointer;
+    height: 100vh;
+    background-image: url("./Assets/section3.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section3 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 550;
+    padding-top: 40px;
+}
+#sub-section3 p{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section3 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section3 div button{
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section3 div button:hover{
+    background-color: #037df6;
+}
+#sub-section3 div button+button{
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+}
+#sub-section3 div button+button:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4{
+    /* border: 2px solid; */
+    height: 1780px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#sub-section4 div{
+    height: 580px;
+    width: 612px;
+    /* border: 1px solid black; */
+}
+#sub-section4 .child-section1{
+    cursor: pointer;
+    background-image: url("./Assets/section-4-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section4 .child-section1 h1{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    padding-top: 40px;
+}
+#sub-section4 .child-section1 p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section4 .child-section1 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section4 .child-section1 div button{
+    height: 35px;
+    width: 100px;
+    padding: 6px 6px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section1 div button:hover{
+    background-color: #037df6;
+}
+#sub-section4 .child-section1 div button+button{
+    width: 60px;
+    padding: 6px 7px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+}
+#sub-section4 .child-section1 div button+button:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section2{
+    cursor: pointer;
+    background-image: url("./Assets/section-4-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section4 .child-section2 h1{
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 25px;
+    /* border: 2px solid white; */
+}
+#sub-section4 .child-section2 h1 svg{
+    padding: 0px;
+    height: 85px;
+    width: 85px;
+    position: relative;
+    right: -25px;
+    fill: #fff;
+}
+#sub-section4 .child-section2 p{
+    color: #c90303;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+#sub-section4 .child-section2 p+p{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+#sub-section4 .child-section2 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section4 .child-section2 div button{
+    height: 35px;
+    width: 100px;
+    padding: 6px 6px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section2 div button:hover{
+    background-color: #037df6;
+}
+#sub-section4 .child-section2 div button+button{
+    width: 60px;
+    padding: 6px 7px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+}
+#sub-section4 .child-section2 div button+button:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section3{
+    cursor: pointer;
+    background-image: url("./Assets/section-4-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section4 .child-section3 h1{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    padding-top: 40px;
+}
+#sub-section4 .child-section3 p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section4 .child-section3 p+p{
+    font-size: 17px;
+    color: #737171;
+}
+#sub-section4 .child-section3 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section4 .child-section3 div button{
+    height: 35px;
+    width: 100px;
+    padding: 6px 6px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section3 div button:hover{
+    background-color: #037df6;
+}
+#sub-section4 .child-section3 div button+button{
+    width: 120px;
+    padding: 6px 9px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+}
+#sub-section4 .child-section3 div button+button:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section4{
+    cursor: pointer;
+    background-image: url("./Assets/section-4-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section4 .child-section4 h1{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    padding-top: 40px;
+}
+#sub-section4 .child-section4 p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section4 .child-section4 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section4 .child-section4 div button{
+    height: 35px;
+    width: 100px;
+    padding: 6px 6px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section4 div button:hover{
+    background-color: #037df6;
+}
+#sub-section4 .child-section4 div button+button{
+    width: 60px;
+    padding: 6px 7px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+}
+#sub-section4 .child-section4 div button+button:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section5{
+    cursor: pointer;
+    background-image: url("./Assets/section-4-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section4 .child-section5 h1{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    padding-top: 40px;
+}
+#sub-section4 .child-section5 p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section4 .child-section5 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#sub-section4 .child-section5 div button{
+    height: 35px;
+    width: 100px;
+    padding: 6px 6px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+#sub-section4 .child-section5 div button:hover{
+    background-color: #1b1b1b;
+}
+#sub-section4 .child-section5 div button+button{
+    width: 60px;
+    padding: 6px 7px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+}
+#sub-section4 .child-section5 div button+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+#sub-section4 .child-section6{
+    cursor: pointer;
+    background-image: url("./Assets/section-4-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#sub-section4 .child-section6 h1{
+    height: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -20px;
+    /* border: 2px solid black */
+}
+#sub-section4 .child-section6 h1 svg{
+    padding: 0px;
+    height: 85px;
+    width: 85px;
+    position: relative;
+    right: -28px;
+}
+#sub-section4 .child-section6 p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+#sub-section4 .child-section6 div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#sub-section4 .child-section6 div button{
+    height: 35px;
+    width: 150px;
+    padding: 6px 6px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+}
+#sub-section4 .child-section6 div button:hover{
+    background-color: #037df6;
+}
+footer{
+    padding-top: 20px;
+    background-color: #dcdcdc4d;
+    height: 863px;
+    width: 100%;
+}
+footer .sub-section1-1{
+    /* border: 2px solid; */
+    margin: auto;
+    width: 78%;
+}
+footer .sub-section1-1 p{
+    color: #0000008f;
+    font-size: 12.3px;
+    line-height: 17px;
+    padding-bottom: 14px;
+    letter-spacing: 0.01em;
+}
+footer .sub-section1-1 p a{
+    color: #000000ad;
+}
+footer .sub-section1-2{
+    /* border: 2px solid; */
+    padding-top: 15px;
+    width: 78%;
+    display: flex;
+    margin: auto;
+}
+footer .sub-section1-2 div{
+    /* border: 2px solid; */
+    width: 30%;
+    height: inherit;
+}
+footer .sub-section1-2 div ol li h4{
+    color: #474747;
+}
+footer .sub-section1-2 div ol li{
+    list-style: none;
+    padding: 6px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #0606068f;
+}
+footer .sub-section1-2 div ol+ol{
+    margin-top: 17px;
+}
+footer .sub-section1-3{
+    /* border: 2px solid; */
+    margin: auto;
+    width: 78%;
+}
+footer .sub-section1-3 p{
+    font-size: 12.5px;
+    color: #0000006c;
+    padding: 17px 0px;
+}
+footer .sub-section1-3 .last{
+    width: 100%;
+    /* border: 2px solid; */
+    display: inline-flex;
+}
+footer .sub-section1-3 .last p{
+    /* border: 2px solid; */
+    width: 30%;
+}
+footer .sub-section1-3 p a{
+    color: #0066CC;
+}
+footer .sub-section1-3 .last p+p{
+    width: 67%;
+}
+footer .sub-section1-3 .last p+p+p{
+    width: 3%;
+}
+
+
+
+
+
+
